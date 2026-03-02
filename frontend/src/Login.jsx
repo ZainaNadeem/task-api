@@ -27,6 +27,17 @@ export default function Login({ onLogin }) {
       <div style={styles.card}>
         <h1 style={styles.title}>Task Manager</h1>
         <p style={styles.subtitle}>Sign in to your account</p>
+
+        {/* Demo credentials box */}
+        <div style={styles.demo}>
+          <p style={styles.demoTitle}>🔑 Demo Credentials</p>
+          <p style={styles.demoText}>Standard: <strong>john</strong> / <strong>secret123</strong></p>
+          <p style={styles.demoText}>Admin: <strong>admin</strong> / <strong>admin123</strong></p>
+          <button style={styles.demoBtn} onClick={() => { setUsername("john"); setPassword("secret123"); }}>
+            Use Demo Account
+          </button>
+        </div>
+
         <form onSubmit={handleSubmit}>
           <input
             style={styles.input}
@@ -75,4 +86,15 @@ const styles = {
     fontSize: "1rem", cursor: "pointer", fontWeight: "600",
   },
   error: { color: "#e53e3e", marginBottom: "1rem", fontSize: "0.9rem" },
+  demo: {
+    background: "#f0f4ff", border: "1px solid #c7d2fe", borderRadius: "8px",
+    padding: "0.75rem 1rem", marginBottom: "1.25rem",
+  },
+  demoTitle: { margin: "0 0 0.4rem", fontWeight: "600", fontSize: "0.85rem", color: "#4338ca" },
+  demoText: { margin: "0.15rem 0", fontSize: "0.85rem", color: "#555" },
+  demoBtn: {
+    marginTop: "0.5rem", padding: "0.35rem 0.85rem", background: "#4f46e5",
+    color: "white", border: "none", borderRadius: "6px", cursor: "pointer",
+    fontSize: "0.8rem", fontWeight: "600",
+  },
 };
