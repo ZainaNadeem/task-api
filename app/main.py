@@ -14,7 +14,11 @@ app = FastAPI(title="Task Management API")
 # Allows our React frontend to talk to this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React dev server
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost",
+        "task-frontend-production-7e2e.up.railway.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
