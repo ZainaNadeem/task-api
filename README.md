@@ -1,12 +1,11 @@
 # Task Management API
 
-A full-stack task management application built with FastAPI, PostgreSQL, React, and Docker — deployed live on Railway.
+A full-stack task management application built with FastAPI, PostgreSQL, React, and Docker - deployed live on Railway.
 
-![Task Manager Dashboard](https://github.com/user-attachments/assets/269f3e0f-ee9f-411c-a62c-35050e5fe696)
+<img src="https://github.com/user-attachments/assets/269f3e0f-ee9f-411c-a62c-35050e5fe696" width="350" alt="Task Manager Dashboard">
 
-![Task Manager Login](https://github.com/user-attachments/assets/b1f1da5e-1848-499c-a430-eb0d1682c0b9)
+<img src="https://github.com/user-attachments/assets/b1f1da5e-1848-499c-a430-eb0d1682c0b9" width="350" alt="Task Manager Login">
 
----
 
 ## Live Demo
 
@@ -15,7 +14,6 @@ A full-stack task management application built with FastAPI, PostgreSQL, React, 
 
 > Demo credentials are available on the login page - no sign up needed.
 
----
 
 ## Features
 
@@ -28,7 +26,6 @@ A full-stack task management application built with FastAPI, PostgreSQL, React, 
 - Fully containerized with Docker
 - Deployed and live on Railway
 
----
 
 ## Technologies
 
@@ -40,7 +37,6 @@ A full-stack task management application built with FastAPI, PostgreSQL, React, 
 - **Docker + Nginx** - containerization and production server
 - **Railway** - cloud deployment
 
----
 
 ## Project Structure
 
@@ -60,7 +56,6 @@ A full-stack task management application built with FastAPI, PostgreSQL, React, 
 - **frontend/Dockerfile**: Multi-stage build for the React frontend with Nginx
 - **docker-compose.yml**: Orchestrates the database, API, and frontend containers
 
----
 
 ## Usage
 
