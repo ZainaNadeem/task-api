@@ -17,7 +17,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost",
-        "task-frontend-production-7e2e.up.railway.app",
+        "https://task-frontend-production-7e2e.up.railway.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
